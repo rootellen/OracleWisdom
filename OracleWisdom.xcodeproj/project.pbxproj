@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D840A4762C62E4E30095951B /* OracleWisdomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4752C62E4E30095951B /* OracleWisdomApp.swift */; };
+		D840A4782C62E4E30095951B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4772C62E4E30095951B /* ContentView.swift */; };
+		D840A47A2C62E4E50095951B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D840A4792C62E4E50095951B /* Assets.xcassets */; };
+		D840A47D2C62E4E50095951B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D840A47C2C62E4E50095951B /* Preview Assets.xcassets */; };
+		D840A4872C62E4E50095951B /* OracleWisdomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4862C62E4E50095951B /* OracleWisdomTests.swift */; };
+		D840A4912C62E4E50095951B /* OracleWisdomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4902C62E4E50095951B /* OracleWisdomUITests.swift */; };
+		D840A4932C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4922C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D840A4832C62E4E50095951B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D840A46A2C62E4E30095951B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D840A4712C62E4E30095951B;
+			remoteInfo = OracleWisdom;
+		};
+		D840A48D2C62E4E50095951B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D840A46A2C62E4E30095951B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D840A4712C62E4E30095951B;
+			remoteInfo = OracleWisdom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D840A4722C62E4E30095951B /* OracleWisdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OracleWisdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D840A4752C62E4E30095951B /* OracleWisdomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomApp.swift; sourceTree = "<group>"; };
+		D840A4772C62E4E30095951B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D840A4792C62E4E50095951B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D840A47C2C62E4E50095951B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D840A4822C62E4E50095951B /* OracleWisdomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OracleWisdomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D840A4862C62E4E50095951B /* OracleWisdomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomTests.swift; sourceTree = "<group>"; };
+		D840A48C2C62E4E50095951B /* OracleWisdomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OracleWisdomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D840A4902C62E4E50095951B /* OracleWisdomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomUITests.swift; sourceTree = "<group>"; };
+		D840A4922C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D840A46F2C62E4E30095951B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D840A47F2C62E4E50095951B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D840A4892C62E4E50095951B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D840A4692C62E4E30095951B = {
+			isa = PBXGroup;
+			children = (
+				D840A4742C62E4E30095951B /* OracleWisdom */,
+				D840A4852C62E4E50095951B /* OracleWisdomTests */,
+				D840A48F2C62E4E50095951B /* OracleWisdomUITests */,
+				D840A4732C62E4E30095951B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D840A4732C62E4E30095951B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4722C62E4E30095951B /* OracleWisdom.app */,
+				D840A4822C62E4E50095951B /* OracleWisdomTests.xctest */,
+				D840A48C2C62E4E50095951B /* OracleWisdomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D840A4742C62E4E30095951B /* OracleWisdom */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4752C62E4E30095951B /* OracleWisdomApp.swift */,
+				D840A4772C62E4E30095951B /* ContentView.swift */,
+				D840A4792C62E4E50095951B /* Assets.xcassets */,
+				D840A47B2C62E4E50095951B /* Preview Content */,
+			);
+			path = OracleWisdom;
+			sourceTree = "<group>";
+		};
+		D840A47B2C62E4E50095951B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D840A47C2C62E4E50095951B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D840A4852C62E4E50095951B /* OracleWisdomTests */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4862C62E4E50095951B /* OracleWisdomTests.swift */,
+			);
+			path = OracleWisdomTests;
+			sourceTree = "<group>";
+		};
+		D840A48F2C62E4E50095951B /* OracleWisdomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4902C62E4E50095951B /* OracleWisdomUITests.swift */,
+				D840A4922C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift */,
+			);
+			path = OracleWisdomUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D840A4712C62E4E30095951B /* OracleWisdom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D840A4962C62E4E50095951B /* Build configuration list for PBXNativeTarget "OracleWisdom" */;
+			buildPhases = (
+				D840A46E2C62E4E30095951B /* Sources */,
+				D840A46F2C62E4E30095951B /* Frameworks */,
+				D840A4702C62E4E30095951B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OracleWisdom;
+			productName = OracleWisdom;
+			productReference = D840A4722C62E4E30095951B /* OracleWisdom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D840A4812C62E4E50095951B /* OracleWisdomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D840A4992C62E4E50095951B /* Build configuration list for PBXNativeTarget "OracleWisdomTests" */;
+			buildPhases = (
+				D840A47E2C62E4E50095951B /* Sources */,
+				D840A47F2C62E4E50095951B /* Frameworks */,
+				D840A4802C62E4E50095951B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D840A4842C62E4E50095951B /* PBXTargetDependency */,
+			);
+			name = OracleWisdomTests;
+			productName = OracleWisdomTests;
+			productReference = D840A4822C62E4E50095951B /* OracleWisdomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D840A48B2C62E4E50095951B /* OracleWisdomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D840A49C2C62E4E50095951B /* Build configuration list for PBXNativeTarget "OracleWisdomUITests" */;
+			buildPhases = (
+				D840A4882C62E4E50095951B /* Sources */,
+				D840A4892C62E4E50095951B /* Frameworks */,
+				D840A48A2C62E4E50095951B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D840A48E2C62E4E50095951B /* PBXTargetDependency */,
+			);
+			name = OracleWisdomUITests;
+			productName = OracleWisdomUITests;
+			productReference = D840A48C2C62E4E50095951B /* OracleWisdomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D840A46A2C62E4E30095951B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D840A4712C62E4E30095951B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D840A4812C62E4E50095951B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D840A4712C62E4E30095951B;
+					};
+					D840A48B2C62E4E50095951B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D840A4712C62E4E30095951B;
+					};
+				};
+			};
+			buildConfigurationList = D840A46D2C62E4E30095951B /* Build configuration list for PBXProject "OracleWisdom" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D840A4692C62E4E30095951B;
+			productRefGroup = D840A4732C62E4E30095951B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D840A4712C62E4E30095951B /* OracleWisdom */,
+				D840A4812C62E4E50095951B /* OracleWisdomTests */,
+				D840A48B2C62E4E50095951B /* OracleWisdomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D840A4702C62E4E30095951B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D840A47D2C62E4E50095951B /* Preview Assets.xcassets in Resources */,
+				D840A47A2C62E4E50095951B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D840A4802C62E4E50095951B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D840A48A2C62E4E50095951B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D840A46E2C62E4E30095951B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D840A4782C62E4E30095951B /* ContentView.swift in Sources */,
+				D840A4762C62E4E30095951B /* OracleWisdomApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D840A47E2C62E4E50095951B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D840A4872C62E4E50095951B /* OracleWisdomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D840A4882C62E4E50095951B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D840A4912C62E4E50095951B /* OracleWisdomUITests.swift in Sources */,
+				D840A4932C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D840A4842C62E4E50095951B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D840A4712C62E4E30095951B /* OracleWisdom */;
+			targetProxy = D840A4832C62E4E50095951B /* PBXContainerItemProxy */;
+		};
+		D840A48E2C62E4E50095951B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D840A4712C62E4E30095951B /* OracleWisdom */;
+			targetProxy = D840A48D2C62E4E50095951B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D840A4942C62E4E50095951B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D840A4952C62E4E50095951B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D840A4972C62E4E50095951B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OracleWisdom/Preview Content\"";
+				DEVELOPMENT_TEAM = Y535M4FVM3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.rootellen.OracleWisdom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D840A4982C62E4E50095951B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OracleWisdom/Preview Content\"";
+				DEVELOPMENT_TEAM = Y535M4FVM3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.rootellen.OracleWisdom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D840A49A2C62E4E50095951B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y535M4FVM3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.rootellen.OracleWisdomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OracleWisdom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OracleWisdom";
+			};
+			name = Debug;
+		};
+		D840A49B2C62E4E50095951B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y535M4FVM3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.rootellen.OracleWisdomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OracleWisdom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OracleWisdom";
+			};
+			name = Release;
+		};
+		D840A49D2C62E4E50095951B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y535M4FVM3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.rootellen.OracleWisdomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OracleWisdom;
+			};
+			name = Debug;
+		};
+		D840A49E2C62E4E50095951B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y535M4FVM3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.rootellen.OracleWisdomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OracleWisdom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D840A46D2C62E4E30095951B /* Build configuration list for PBXProject "OracleWisdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D840A4942C62E4E50095951B /* Debug */,
+				D840A4952C62E4E50095951B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D840A4962C62E4E50095951B /* Build configuration list for PBXNativeTarget "OracleWisdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D840A4972C62E4E50095951B /* Debug */,
+				D840A4982C62E4E50095951B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D840A4992C62E4E50095951B /* Build configuration list for PBXNativeTarget "OracleWisdomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D840A49A2C62E4E50095951B /* Debug */,
+				D840A49B2C62E4E50095951B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D840A49C2C62E4E50095951B /* Build configuration list for PBXNativeTarget "OracleWisdomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D840A49D2C62E4E50095951B /* Debug */,
+				D840A49E2C62E4E50095951B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D840A46A2C62E4E30095951B /* Project object */;
+}
