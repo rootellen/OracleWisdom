@@ -8,12 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		D840A4762C62E4E30095951B /* OracleWisdomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4752C62E4E30095951B /* OracleWisdomApp.swift */; };
-		D840A4782C62E4E30095951B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4772C62E4E30095951B /* ContentView.swift */; };
+		D840A4782C62E4E30095951B /* DailyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4772C62E4E30095951B /* DailyCardView.swift */; };
 		D840A47A2C62E4E50095951B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D840A4792C62E4E50095951B /* Assets.xcassets */; };
 		D840A47D2C62E4E50095951B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D840A47C2C62E4E50095951B /* Preview Assets.xcassets */; };
 		D840A4872C62E4E50095951B /* OracleWisdomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4862C62E4E50095951B /* OracleWisdomTests.swift */; };
 		D840A4912C62E4E50095951B /* OracleWisdomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4902C62E4E50095951B /* OracleWisdomUITests.swift */; };
 		D840A4932C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4922C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift */; };
+		D840A4A72C62E7540095951B /* DailyCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4A62C62E7540095951B /* DailyCardRequest.swift */; };
+		D840A4AC2C62EBD20095951B /* DailyCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4AB2C62EBD20095951B /* DailyCardRepository.swift */; };
+		D840A4AE2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4AD2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift */; };
+		D840A4B22C62EE8D0095951B /* DailyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4B12C62EE8D0095951B /* DailyCard.swift */; };
+		D840A4B92C62FC1E0095951B /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4B82C62FC1E0095951B /* RequestBuilder.swift */; };
+		D840A4BC2C62FDD90095951B /* DailyCardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4BB2C62FDD90095951B /* DailyCardUseCase.swift */; };
+		D840A4BF2C62FED10095951B /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4BE2C62FED10095951B /* DIContainer.swift */; };
+		D840A4C22C6300750095951B /* AppDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4C12C6300750095951B /* AppDependencyInjection.swift */; };
+		D840A4C42C630CA80095951B /* DailyCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4C32C630CA80095951B /* DailyCardViewModel.swift */; };
+		D840A4C82C63F0B00095951B /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4C72C63F0B00095951B /* APILogger.swift */; };
+		D840A4CB2C63F13A0095951B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4CA2C63F13A0095951B /* NetworkClient.swift */; };
+		D840A4CD2C63F1560095951B /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4CC2C63F1560095951B /* NetworkClientProtocol.swift */; };
+		D840A4D22C63F27E0095951B /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4D12C63F27E0095951B /* BaseRequest.swift */; };
+		D840A4D42C63F3660095951B /* DailyCardRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4D32C63F3660095951B /* DailyCardRemoteDataSource.swift */; };
+		D840A4DD2C64141F0095951B /* DailyCardDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4DC2C64141F0095951B /* DailyCardDTO.swift */; };
+		D840A4E22C6436AA0095951B /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4E12C6436AA0095951B /* DataError.swift */; };
+		D8BD8AFC2C646918005D42C3 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8AFB2C646918005D42C3 /* Font+Extension.swift */; };
+		D8BD8AFD2C646ABE005D42C3 /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8BD8AF92C64684C005D42C3 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */; };
+		D8BD8AFE2C646AC1005D42C3 /* PlayfairDisplay-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8BD8AFA2C64684C005D42C3 /* PlayfairDisplay-VariableFont_wght.ttf */; };
+		D8BD8B002C646C20005D42C3 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8AFF2C646C20005D42C3 /* Color+Extension.swift */; };
+		D8BD8B032C651916005D42C3 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B022C651916005D42C3 /* ButtonStyle.swift */; };
+		D8BD8B072C651EBE005D42C3 /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B062C651EBE005D42C3 /* HomeContentView.swift */; };
+		D8BD8B0C2C651FB6005D42C3 /* BackgroundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B0B2C651FB6005D42C3 /* BackgroundViews.swift */; };
+		D8BD8B0F2C652DB2005D42C3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B0E2C652DB2005D42C3 /* HomeViewModel.swift */; };
+		D8BD8B162C65382F005D42C3 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B152C65382F005D42C3 /* MainRouter.swift */; };
+		D8BD8B212C65611E005D42C3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B202C65611E005D42C3 /* Router.swift */; };
+		D8BD8B242C6687CD005D42C3 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B232C6687CD005D42C3 /* HomeBuilder.swift */; };
+		D8BD8B272C6687E6005D42C3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B262C6687E6005D42C3 /* HomeScreen.swift */; };
+		D8DD44BB2C644F17001D1CBD /* DailyCardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD44BA2C644F17001D1CBD /* DailyCardScreen.swift */; };
+		D8DD44BD2C644FC6001D1CBD /* DailyCardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD44BC2C644FC6001D1CBD /* DailyCardBuilder.swift */; };
+		D8DD44BF2C6453E6001D1CBD /* DailyCardTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD44BE2C6453E6001D1CBD /* DailyCardTopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +67,7 @@
 /* Begin PBXFileReference section */
 		D840A4722C62E4E30095951B /* OracleWisdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OracleWisdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D840A4752C62E4E30095951B /* OracleWisdomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomApp.swift; sourceTree = "<group>"; };
-		D840A4772C62E4E30095951B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D840A4772C62E4E30095951B /* DailyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardView.swift; sourceTree = "<group>"; };
 		D840A4792C62E4E50095951B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D840A47C2C62E4E50095951B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D840A4822C62E4E50095951B /* OracleWisdomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OracleWisdomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +75,38 @@
 		D840A48C2C62E4E50095951B /* OracleWisdomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OracleWisdomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D840A4902C62E4E50095951B /* OracleWisdomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomUITests.swift; sourceTree = "<group>"; };
 		D840A4922C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D840A4A62C62E7540095951B /* DailyCardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardRequest.swift; sourceTree = "<group>"; };
+		D840A4AB2C62EBD20095951B /* DailyCardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardRepository.swift; sourceTree = "<group>"; };
+		D840A4AD2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D840A4B12C62EE8D0095951B /* DailyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCard.swift; sourceTree = "<group>"; };
+		D840A4B82C62FC1E0095951B /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		D840A4BB2C62FDD90095951B /* DailyCardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardUseCase.swift; sourceTree = "<group>"; };
+		D840A4BE2C62FED10095951B /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		D840A4C12C6300750095951B /* AppDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyInjection.swift; sourceTree = "<group>"; };
+		D840A4C32C630CA80095951B /* DailyCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardViewModel.swift; sourceTree = "<group>"; };
+		D840A4C52C630FA70095951B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D840A4C72C63F0B00095951B /* APILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
+		D840A4CA2C63F13A0095951B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		D840A4CC2C63F1560095951B /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		D840A4D12C63F27E0095951B /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		D840A4D32C63F3660095951B /* DailyCardRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardRemoteDataSource.swift; sourceTree = "<group>"; };
+		D840A4DC2C64141F0095951B /* DailyCardDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardDTO.swift; sourceTree = "<group>"; };
+		D840A4E12C6436AA0095951B /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		D8BD8AF92C64684C005D42C3 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		D8BD8AFA2C64684C005D42C3 /* PlayfairDisplay-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		D8BD8AFB2C646918005D42C3 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		D8BD8AFF2C646C20005D42C3 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		D8BD8B022C651916005D42C3 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		D8BD8B062C651EBE005D42C3 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
+		D8BD8B0B2C651FB6005D42C3 /* BackgroundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViews.swift; sourceTree = "<group>"; };
+		D8BD8B0E2C652DB2005D42C3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D8BD8B152C65382F005D42C3 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		D8BD8B202C65611E005D42C3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D8BD8B232C6687CD005D42C3 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		D8BD8B262C6687E6005D42C3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		D8DD44BA2C644F17001D1CBD /* DailyCardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardScreen.swift; sourceTree = "<group>"; };
+		D8DD44BC2C644FC6001D1CBD /* DailyCardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardBuilder.swift; sourceTree = "<group>"; };
+		D8DD44BE2C6453E6001D1CBD /* DailyCardTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardTopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +157,16 @@
 		D840A4742C62E4E30095951B /* OracleWisdom */ = {
 			isa = PBXGroup;
 			children = (
-				D840A4752C62E4E30095951B /* OracleWisdomApp.swift */,
-				D840A4772C62E4E30095951B /* ContentView.swift */,
-				D840A4792C62E4E50095951B /* Assets.xcassets */,
+				D840A4C52C630FA70095951B /* Info.plist */,
+				D840A4C02C63003C0095951B /* App */,
+				D840A4A82C62E7C60095951B /* Core */,
+				D840A4BD2C62FEA60095951B /* DIContainer */,
+				D8BD8B052C651EA9005D42C3 /* Presentation */,
+				D840A4A02C62E53F0095951B /* Domain */,
+				D840A49F2C62E53A0095951B /* Data */,
+				D8DD44C12C645DBA001D1CBD /* Support */,
 				D840A47B2C62E4E50095951B /* Preview Content */,
+				D8BD8B132C6537D6005D42C3 /* Resource */,
 			);
 			path = OracleWisdom;
 			sourceTree = "<group>";
@@ -127,6 +196,264 @@
 			path = OracleWisdomUITests;
 			sourceTree = "<group>";
 		};
+		D840A49F2C62E53A0095951B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4DB2C6414090095951B /* DTO */,
+				D840A4B72C62FB590095951B /* RemoteDataSource */,
+				D840A4A52C62E60E0095951B /* Repository */,
+				D840A4A42C62E5EB0095951B /* API */,
+				D840A4A32C62E5E30095951B /* PersistentStorage */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D840A4A02C62E53F0095951B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4BA2C62FDBB0095951B /* UseCases */,
+				D840A4B02C62EC4F0095951B /* Entities */,
+				D840A4AF2C62EC450095951B /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D840A4A32C62E5E30095951B /* PersistentStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersistentStorage;
+			sourceTree = "<group>";
+		};
+		D840A4A42C62E5EB0095951B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4A62C62E7540095951B /* DailyCardRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D840A4A52C62E60E0095951B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4AB2C62EBD20095951B /* DailyCardRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D840A4A82C62E7C60095951B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8B142C653824005D42C3 /* Routing */,
+				D840A4B32C62F0C00095951B /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D840A4AF2C62EC450095951B /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4AD2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		D840A4B02C62EC4F0095951B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4B12C62EE8D0095951B /* DailyCard.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D840A4B32C62F0C00095951B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4D02C63F2120095951B /* Request */,
+				D840A4C92C63F12E0095951B /* Client */,
+				D840A4C62C63F0960095951B /* Utils */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D840A4B72C62FB590095951B /* RemoteDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4D32C63F3660095951B /* DailyCardRemoteDataSource.swift */,
+			);
+			path = RemoteDataSource;
+			sourceTree = "<group>";
+		};
+		D840A4BA2C62FDBB0095951B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4BB2C62FDD90095951B /* DailyCardUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		D840A4BD2C62FEA60095951B /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4BE2C62FED10095951B /* DIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		D840A4C02C63003C0095951B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4752C62E4E30095951B /* OracleWisdomApp.swift */,
+				D840A4C12C6300750095951B /* AppDependencyInjection.swift */,
+				D8BD8B202C65611E005D42C3 /* Router.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D840A4C62C63F0960095951B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4C72C63F0B00095951B /* APILogger.swift */,
+				D840A4E12C6436AA0095951B /* DataError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D840A4C92C63F12E0095951B /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4CA2C63F13A0095951B /* NetworkClient.swift */,
+				D840A4CC2C63F1560095951B /* NetworkClientProtocol.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		D840A4D02C63F2120095951B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4B82C62FC1E0095951B /* RequestBuilder.swift */,
+				D840A4D12C63F27E0095951B /* BaseRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		D840A4DB2C6414090095951B /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4DC2C64141F0095951B /* DailyCardDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		D8BD8AF82C64683E005D42C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8AF92C64684C005D42C3 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */,
+				D8BD8AFA2C64684C005D42C3 /* PlayfairDisplay-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D8BD8B012C65190A005D42C3 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8B022C651916005D42C3 /* ButtonStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		D8BD8B052C651EA9005D42C3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8B222C6687BD005D42C3 /* Home */,
+				D8BD8B292C6689C5005D42C3 /* DailyCard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D8BD8B0A2C651FA3005D42C3 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8B0B2C651FB6005D42C3 /* BackgroundViews.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		D8BD8B132C6537D6005D42C3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D840A4792C62E4E50095951B /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D8BD8B142C653824005D42C3 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8B152C65382F005D42C3 /* MainRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		D8BD8B222C6687BD005D42C3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8B282C668998005D42C3 /* Sections */,
+				D8BD8B0E2C652DB2005D42C3 /* HomeViewModel.swift */,
+				D8BD8B232C6687CD005D42C3 /* HomeBuilder.swift */,
+				D8BD8B262C6687E6005D42C3 /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D8BD8B282C668998005D42C3 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8B062C651EBE005D42C3 /* HomeContentView.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		D8BD8B292C6689C5005D42C3 /* DailyCard */ = {
+			isa = PBXGroup;
+			children = (
+				D8DD44C02C6453F3001D1CBD /* Sections */,
+				D840A4C32C630CA80095951B /* DailyCardViewModel.swift */,
+				D8DD44BA2C644F17001D1CBD /* DailyCardScreen.swift */,
+				D8DD44BC2C644FC6001D1CBD /* DailyCardBuilder.swift */,
+			);
+			path = DailyCard;
+			sourceTree = "<group>";
+		};
+		D8DD44C02C6453F3001D1CBD /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				D8DD44BE2C6453E6001D1CBD /* DailyCardTopView.swift */,
+				D840A4772C62E4E30095951B /* DailyCardView.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		D8DD44C12C645DBA001D1CBD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8B0A2C651FA3005D42C3 /* CommonViews */,
+				D8BD8B012C65190A005D42C3 /* Style */,
+				D8BD8AF82C64683E005D42C3 /* Fonts */,
+				D8DD44C22C645DDE001D1CBD /* Extensions */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D8DD44C22C645DDE001D1CBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD8AFB2C646918005D42C3 /* Font+Extension.swift */,
+				D8BD8AFF2C646C20005D42C3 /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +470,8 @@
 			dependencies = (
 			);
 			name = OracleWisdom;
+			packageProductDependencies = (
+			);
 			productName = OracleWisdom;
 			productReference = D840A4722C62E4E30095951B /* OracleWisdom.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +544,8 @@
 				Base,
 			);
 			mainGroup = D840A4692C62E4E30095951B;
+			packageReferences = (
+			);
 			productRefGroup = D840A4732C62E4E30095951B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,7 +562,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8BD8AFD2C646ABE005D42C3 /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */,
 				D840A47D2C62E4E50095951B /* Preview Assets.xcassets in Resources */,
+				D8BD8AFE2C646AC1005D42C3 /* PlayfairDisplay-VariableFont_wght.ttf in Resources */,
 				D840A47A2C62E4E50095951B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +590,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D840A4782C62E4E30095951B /* ContentView.swift in Sources */,
+				D840A4C42C630CA80095951B /* DailyCardViewModel.swift in Sources */,
+				D840A4BF2C62FED10095951B /* DIContainer.swift in Sources */,
+				D8BD8B072C651EBE005D42C3 /* HomeContentView.swift in Sources */,
+				D840A4D22C63F27E0095951B /* BaseRequest.swift in Sources */,
+				D840A4782C62E4E30095951B /* DailyCardView.swift in Sources */,
+				D8BD8AFC2C646918005D42C3 /* Font+Extension.swift in Sources */,
+				D8BD8B212C65611E005D42C3 /* Router.swift in Sources */,
+				D840A4A72C62E7540095951B /* DailyCardRequest.swift in Sources */,
+				D840A4C82C63F0B00095951B /* APILogger.swift in Sources */,
+				D840A4E22C6436AA0095951B /* DataError.swift in Sources */,
+				D840A4AE2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift in Sources */,
+				D8BD8B032C651916005D42C3 /* ButtonStyle.swift in Sources */,
+				D8BD8B242C6687CD005D42C3 /* HomeBuilder.swift in Sources */,
+				D840A4AC2C62EBD20095951B /* DailyCardRepository.swift in Sources */,
+				D840A4BC2C62FDD90095951B /* DailyCardUseCase.swift in Sources */,
+				D8DD44BF2C6453E6001D1CBD /* DailyCardTopView.swift in Sources */,
+				D840A4B22C62EE8D0095951B /* DailyCard.swift in Sources */,
+				D840A4C22C6300750095951B /* AppDependencyInjection.swift in Sources */,
+				D8BD8B0C2C651FB6005D42C3 /* BackgroundViews.swift in Sources */,
+				D840A4CB2C63F13A0095951B /* NetworkClient.swift in Sources */,
+				D840A4DD2C64141F0095951B /* DailyCardDTO.swift in Sources */,
+				D8DD44BB2C644F17001D1CBD /* DailyCardScreen.swift in Sources */,
 				D840A4762C62E4E30095951B /* OracleWisdomApp.swift in Sources */,
+				D8BD8B162C65382F005D42C3 /* MainRouter.swift in Sources */,
+				D840A4B92C62FC1E0095951B /* RequestBuilder.swift in Sources */,
+				D8BD8B0F2C652DB2005D42C3 /* HomeViewModel.swift in Sources */,
+				D8BD8B272C6687E6005D42C3 /* HomeScreen.swift in Sources */,
+				D8DD44BD2C644FC6001D1CBD /* DailyCardBuilder.swift in Sources */,
+				D840A4CD2C63F1560095951B /* NetworkClientProtocol.swift in Sources */,
+				D840A4D42C63F3660095951B /* DailyCardRemoteDataSource.swift in Sources */,
+				D8BD8B002C646C20005D42C3 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +787,8 @@
 				DEVELOPMENT_TEAM = Y535M4FVM3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OracleWisdom/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +818,8 @@
 				DEVELOPMENT_TEAM = Y535M4FVM3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OracleWisdom/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
