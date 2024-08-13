@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DailyCard: Decodable {
+struct DailyCard: Decodable, Hashable {
     let name, description, meaningReverse, meaningUp, shortName: String
     let number: Int
     let type: CardType

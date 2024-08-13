@@ -35,5 +35,4 @@ class HomeBuilder {
     func getOverlayView() -> some View {
         EmptyView()
     }
-    
 }

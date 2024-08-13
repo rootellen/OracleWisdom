@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D840A4762C62E4E30095951B /* OracleWisdomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4752C62E4E30095951B /* OracleWisdomApp.swift */; };
-		D840A4782C62E4E30095951B /* DailyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4772C62E4E30095951B /* DailyCardView.swift */; };
+		D840A4782C62E4E30095951B /* DailyCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4772C62E4E30095951B /* DailyCardContentView.swift */; };
 		D840A47A2C62E4E50095951B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D840A4792C62E4E50095951B /* Assets.xcassets */; };
 		D840A47D2C62E4E50095951B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D840A47C2C62E4E50095951B /* Preview Assets.xcassets */; };
 		D840A4872C62E4E50095951B /* OracleWisdomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4862C62E4E50095951B /* OracleWisdomTests.swift */; };
@@ -30,6 +30,11 @@
 		D840A4D42C63F3660095951B /* DailyCardRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4D32C63F3660095951B /* DailyCardRemoteDataSource.swift */; };
 		D840A4DD2C64141F0095951B /* DailyCardDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4DC2C64141F0095951B /* DailyCardDTO.swift */; };
 		D840A4E22C6436AA0095951B /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4E12C6436AA0095951B /* DataError.swift */; };
+		D8BB44422C6BE5D7006D57BE /* CardDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB44412C6BE5D7006D57BE /* CardDetailsBuilder.swift */; };
+		D8BB44442C6BE5E2006D57BE /* CardDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB44432C6BE5E2006D57BE /* CardDetailsScreen.swift */; };
+		D8BB44462C6BE5F1006D57BE /* CardDetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB44452C6BE5F1006D57BE /* CardDetailsContentView.swift */; };
+		D8BB44482C6BE5FF006D57BE /* CardDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB44472C6BE5FF006D57BE /* CardDetailsViewModel.swift */; };
+		D8BB444B2C6BEA3C006D57BE /* CardMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB444A2C6BEA3C006D57BE /* CardMock.swift */; };
 		D8BD8AFC2C646918005D42C3 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8AFB2C646918005D42C3 /* Font+Extension.swift */; };
 		D8BD8AFD2C646ABE005D42C3 /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8BD8AF92C64684C005D42C3 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */; };
 		D8BD8AFE2C646AC1005D42C3 /* PlayfairDisplay-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8BD8AFA2C64684C005D42C3 /* PlayfairDisplay-VariableFont_wght.ttf */; };
@@ -67,7 +72,7 @@
 /* Begin PBXFileReference section */
 		D840A4722C62E4E30095951B /* OracleWisdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OracleWisdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D840A4752C62E4E30095951B /* OracleWisdomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomApp.swift; sourceTree = "<group>"; };
-		D840A4772C62E4E30095951B /* DailyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardView.swift; sourceTree = "<group>"; };
+		D840A4772C62E4E30095951B /* DailyCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardContentView.swift; sourceTree = "<group>"; };
 		D840A4792C62E4E50095951B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D840A47C2C62E4E50095951B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D840A4822C62E4E50095951B /* OracleWisdomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OracleWisdomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +97,11 @@
 		D840A4D32C63F3660095951B /* DailyCardRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardRemoteDataSource.swift; sourceTree = "<group>"; };
 		D840A4DC2C64141F0095951B /* DailyCardDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardDTO.swift; sourceTree = "<group>"; };
 		D840A4E12C6436AA0095951B /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		D8BB44412C6BE5D7006D57BE /* CardDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsBuilder.swift; sourceTree = "<group>"; };
+		D8BB44432C6BE5E2006D57BE /* CardDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsScreen.swift; sourceTree = "<group>"; };
+		D8BB44452C6BE5F1006D57BE /* CardDetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsContentView.swift; sourceTree = "<group>"; };
+		D8BB44472C6BE5FF006D57BE /* CardDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsViewModel.swift; sourceTree = "<group>"; };
+		D8BB444A2C6BEA3C006D57BE /* CardMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMock.swift; sourceTree = "<group>"; };
 		D8BD8AF92C64684C005D42C3 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D8BD8AFA2C64684C005D42C3 /* PlayfairDisplay-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D8BD8AFB2C646918005D42C3 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
@@ -345,6 +355,33 @@
 			path = DTO;
 			sourceTree = "<group>";
 		};
+		D8BB443F2C6BE5C5006D57BE /* CardDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D8BB44402C6BE5CC006D57BE /* Sections */,
+				D8BB44412C6BE5D7006D57BE /* CardDetailsBuilder.swift */,
+				D8BB44432C6BE5E2006D57BE /* CardDetailsScreen.swift */,
+				D8BB44472C6BE5FF006D57BE /* CardDetailsViewModel.swift */,
+			);
+			path = CardDetails;
+			sourceTree = "<group>";
+		};
+		D8BB44402C6BE5CC006D57BE /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				D8BB44452C6BE5F1006D57BE /* CardDetailsContentView.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		D8BB44492C6BEA30006D57BE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D8BB444A2C6BEA3C006D57BE /* CardMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		D8BD8AF82C64683E005D42C3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +404,7 @@
 			children = (
 				D8BD8B222C6687BD005D42C3 /* Home */,
 				D8BD8B292C6689C5005D42C3 /* DailyCard */,
+				D8BB443F2C6BE5C5006D57BE /* CardDetails */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -429,7 +467,7 @@
 			isa = PBXGroup;
 			children = (
 				D8DD44BE2C6453E6001D1CBD /* DailyCardTopView.swift */,
-				D840A4772C62E4E30095951B /* DailyCardView.swift */,
+				D840A4772C62E4E30095951B /* DailyCardContentView.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -437,6 +475,7 @@
 		D8DD44C12C645DBA001D1CBD /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				D8BB44492C6BEA30006D57BE /* Mocks */,
 				D8BD8B0A2C651FA3005D42C3 /* CommonViews */,
 				D8BD8B012C65190A005D42C3 /* Style */,
 				D8BD8AF82C64683E005D42C3 /* Fonts */,
@@ -594,21 +633,25 @@
 				D840A4BF2C62FED10095951B /* DIContainer.swift in Sources */,
 				D8BD8B072C651EBE005D42C3 /* HomeContentView.swift in Sources */,
 				D840A4D22C63F27E0095951B /* BaseRequest.swift in Sources */,
-				D840A4782C62E4E30095951B /* DailyCardView.swift in Sources */,
+				D840A4782C62E4E30095951B /* DailyCardContentView.swift in Sources */,
 				D8BD8AFC2C646918005D42C3 /* Font+Extension.swift in Sources */,
 				D8BD8B212C65611E005D42C3 /* Router.swift in Sources */,
 				D840A4A72C62E7540095951B /* DailyCardRequest.swift in Sources */,
+				D8BB44442C6BE5E2006D57BE /* CardDetailsScreen.swift in Sources */,
+				D8BB444B2C6BEA3C006D57BE /* CardMock.swift in Sources */,
 				D840A4C82C63F0B00095951B /* APILogger.swift in Sources */,
 				D840A4E22C6436AA0095951B /* DataError.swift in Sources */,
 				D840A4AE2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift in Sources */,
 				D8BD8B032C651916005D42C3 /* ButtonStyle.swift in Sources */,
 				D8BD8B242C6687CD005D42C3 /* HomeBuilder.swift in Sources */,
 				D840A4AC2C62EBD20095951B /* DailyCardRepository.swift in Sources */,
+				D8BB44462C6BE5F1006D57BE /* CardDetailsContentView.swift in Sources */,
 				D840A4BC2C62FDD90095951B /* DailyCardUseCase.swift in Sources */,
 				D8DD44BF2C6453E6001D1CBD /* DailyCardTopView.swift in Sources */,
 				D840A4B22C62EE8D0095951B /* DailyCard.swift in Sources */,
 				D840A4C22C6300750095951B /* AppDependencyInjection.swift in Sources */,
 				D8BD8B0C2C651FB6005D42C3 /* BackgroundViews.swift in Sources */,
+				D8BB44482C6BE5FF006D57BE /* CardDetailsViewModel.swift in Sources */,
 				D840A4CB2C63F13A0095951B /* NetworkClient.swift in Sources */,
 				D840A4DD2C64141F0095951B /* DailyCardDTO.swift in Sources */,
 				D8DD44BB2C644F17001D1CBD /* DailyCardScreen.swift in Sources */,
@@ -616,6 +659,7 @@
 				D8BD8B162C65382F005D42C3 /* MainRouter.swift in Sources */,
 				D840A4B92C62FC1E0095951B /* RequestBuilder.swift in Sources */,
 				D8BD8B0F2C652DB2005D42C3 /* HomeViewModel.swift in Sources */,
+				D8BB44422C6BE5D7006D57BE /* CardDetailsBuilder.swift in Sources */,
 				D8BD8B272C6687E6005D42C3 /* HomeScreen.swift in Sources */,
 				D8DD44BD2C644FC6001D1CBD /* DailyCardBuilder.swift in Sources */,
 				D840A4CD2C63F1560095951B /* NetworkClientProtocol.swift in Sources */,

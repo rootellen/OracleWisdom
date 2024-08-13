@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-enum Routes {
+enum Routes: Hashable {
     case home
     case dailyCard
-    case cardDetails
 }
 
 final class Router: ObservableObject {

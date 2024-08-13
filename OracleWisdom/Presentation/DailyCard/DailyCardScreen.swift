@@ -29,8 +29,8 @@ struct DailyCardScreen<Top: View,
         ZStack {
             background
             VStack {
+                top
                 ScrollView {
-                    top
                     content
                 }
             }
@@ -49,10 +49,11 @@ extension DailyCardScreen {
                                           Color.darkMid,
                                           Color.lightMid,
                                           Color.lightBottom])
+        .blendMode(.normal)
     }
     
 }
 
 #Preview {
-    DailyCardScreen(top: DailyCardTopView(), content: DailyCardView(), overlay: EmptyView())
+    DailyCardScreen(top: DailyCardTopView(), content: DailyCardContentView(), overlay: EmptyView())
 }

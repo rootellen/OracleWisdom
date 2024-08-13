@@ -18,6 +18,7 @@ struct HomeContentView: View {
     
     var body: some View {
         mainContent
+            .ignoresSafeArea(edges: .bottom)
     }
 }
 

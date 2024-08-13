@@ -16,10 +16,13 @@ extension DIContainer {
         // Home
         register(type: HomeViewModelProtocol.self, component: HomeViewModel())
 
-        // DailyCard
+        // Daily Card
         register(type: DailyCardRemoteDataSourceProtocol.self, component: DailyCardRemoteDataSource())
         register(type: DailyCardRepositoryProtocol.self, component: DailyCardRepository())
         register(type: DailyCardUseCaseProtocol.self, component: DailyCardUseCase())
         register(type: DailyCardViewModelProtocol.self, component: DailyCardViewModel())
+        
+        // Card Details
+        register(type: CardDetailsViewModelProtocol.self, component: CardDetailsViewModel())
     }
 }

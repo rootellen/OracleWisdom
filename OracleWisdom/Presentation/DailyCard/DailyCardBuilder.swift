@@ -28,12 +28,11 @@ class DailyCardBuilder {
     
     @ViewBuilder
     func getContentView() -> some View {
-        DailyCardView()
+        DailyCardContentView()
     }
     
     @ViewBuilder
     func getOverlayView() -> some View {
         EmptyView()
     }
-    
 }

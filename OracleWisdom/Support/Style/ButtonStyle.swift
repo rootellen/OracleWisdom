@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AboutThisCardStyle: ButtonStyle {
+struct LargeRoundedButtonStyle: ButtonStyle {
     var backgroundColor: LinearGradient
     var cornerRadius: CGFloat
     

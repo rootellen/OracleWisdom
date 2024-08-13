@@ -24,11 +24,12 @@ struct HomeScreen<Top: View,
         ZStack {
             background
             VStack {
-                top
                 ScrollView {
+                    top
                     content
                 }
             }
+            overlay
         }
         .toolbar(.hidden)
     }
@@ -40,6 +41,7 @@ private extension HomeScreen {
                                           Color.darkMid,
                                           Color.lightMid,
                                           Color.lightBottom])
+        .overlay(Text("Background Loaded").foregroundColor(.white))
     }
 }
 

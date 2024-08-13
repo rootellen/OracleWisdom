@@ -15,5 +15,6 @@ struct LinearGradientBackground: View {
                        startPoint: .top,
                        endPoint: .bottom)
         .ignoresSafeArea()
+        .preferredColorScheme(.light)
     }
 }

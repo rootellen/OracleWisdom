@@ -19,14 +19,13 @@ struct OracleWisdomApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.path) {
-                HomeContentView().navigationDestination(for: Routes.self) { route in
+                HomeBuilder().build().navigationDestination(for: Routes.self) { route in
                     switch(route) {
                     case .home:
                         HomeBuilder().build()
                     case .dailyCard:
                         DailyCardBuilder().build()
-                    case .cardDetails:
-                        EmptyView()
+                        
                     }
                 }
             }

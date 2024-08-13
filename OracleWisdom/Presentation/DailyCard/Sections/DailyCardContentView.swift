@@ -8,11 +8,12 @@
 import SwiftUI
 import Combine
 
-struct DailyCardView: View {
+struct DailyCardContentView: View {
     @ObservedObject var router = Router.shared
     
     var viewModel: DailyCardViewModelProtocol
     @State var dailyCard: DailyCard? = nil
+    @State private var isSheetPresented = false
     
     init(viewModel: DailyCardViewModelProtocol = DIContainer.shared.inject(type: DailyCardViewModelProtocol.self)!) {
         self.viewModel = viewModel
@@ -26,7 +27,7 @@ struct DailyCardView: View {
             })
     }
 }
-extension DailyCardView {
+extension DailyCardContentView {
     @ViewBuilder var mainContent: some View {
         if let dailyCard {
             VStack(alignment: .center) {
@@ -36,8 +37,8 @@ extension DailyCardView {
                     
                 }
                 bottomHanger
-                cardInfo(dailyCard)
                 aboutThisCardButton
+                interpretationButton
             }
         }
     }
@@ -49,45 +50,10 @@ extension DailyCardView {
             .padding()
     }
     
-    @ViewBuilder
-    func cardInfo(_ card: DailyCard) -> some View {
-        VStack(alignment: .center) {
-            Text("MEANING")
-                .font(.playfairDisplay(size: 24).italic())
-                .foregroundStyle(Color.goldenLinearGratient)
-            cardMeaning(
-                card.isReversed ? card.meaningReverse : card.meaningUp
-            )
-        }
-    }
-    
-    @ViewBuilder
-    func cardMeaning(_ meaning: String) -> some View {
-        ZStack{
-            cardBackground
-            VStack {
-                let meaning = "\(meaning)"
-                Text(meaning)
-                    .font(.playfairDisplay(size: 16))
-                    .foregroundStyle(Color.goldenLinearGratient)
-                    .padding()
-            }
-            .padding()
-        }
-    }
-    
-    @ViewBuilder var cardBackground: some View {
-        RoundedRectangle(cornerRadius: 20)
-            .fill(
-                RadialGradient(colors: [Color.golden, Color.lightMid], center: .center, startRadius: 700, endRadius: 1)
-            )
-            .padding()
-    }
-    
     @ViewBuilder var aboutThisCardButton: some View {
         HStack {
             Button {
-                router.navigateTo(Routes.cardDetails)
+                isSheetPresented = true
             } label: {
                 HStack {
                     Spacer()
@@ -97,11 +63,36 @@ extension DailyCardView {
                     Spacer()
                 }
             }
-            .buttonStyle(AboutThisCardStyle(backgroundColor: Color.goldenLinearGratient, cornerRadius: 20))
+            .buttonStyle(LargeRoundedButtonStyle(backgroundColor: Color.goldenLinearGradient, cornerRadius: 20))
+            .padding()
+            .sheet(isPresented: $isSheetPresented, onDismiss: {
+                isSheetPresented = false
+            }, content: {
+                CardDetailsBuilder()
+                    .setCard(card: dailyCard ?? nil)
+                    .build()
+                    .presentationDetents([.fraction(0.8)])
+            })
+            
+
+        }
+    }
+    
+    @ViewBuilder var interpretationButton: some View {
+        HStack {
+            Button {
+            } label: {
+                HStack {
+                    Spacer()
+                    Text("Get IA interpretation with Gemini")
+                        .font(.playfairDisplay(size: 20))
+                        .foregroundStyle(Color.darkMid)
+                    Spacer()
+                }
+            }
+            .buttonStyle(LargeRoundedButtonStyle(backgroundColor: Color.goldenLinearGradient, cornerRadius: 20))
             .padding()
         }
-        
-        
     }
     
     @ViewBuilder
@@ -135,7 +126,7 @@ extension DailyCardView {
 
 #Preview {
     ScrollView {
-        DailyCardView(viewModel: DailyCardViewPreviewViewModel())
+        DailyCardContentView(viewModel: DailyCardViewPreviewViewModel())
     }
 }
 
