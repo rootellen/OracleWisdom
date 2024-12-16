@@ -38,7 +38,6 @@ extension DailyCardContentView {
                 }
                 bottomHanger
                 aboutThisCardButton
-                interpretationButton
             }
         }
     }
@@ -75,23 +74,6 @@ extension DailyCardContentView {
             })
             
 
-        }
-    }
-    
-    @ViewBuilder var interpretationButton: some View {
-        HStack {
-            Button {
-            } label: {
-                HStack {
-                    Spacer()
-                    Text("Get IA interpretation with Gemini")
-                        .font(.playfairDisplay(size: 20))
-                        .foregroundStyle(Color.darkMid)
-                    Spacer()
-                }
-            }
-            .buttonStyle(LargeRoundedButtonStyle(backgroundColor: Color.goldenLinearGradient, cornerRadius: 20))
-            .padding()
         }
     }
     
@@ -134,7 +116,7 @@ class DailyCardViewPreviewViewModel: DailyCardViewModelProtocol {
     func didTapAboutThisCardButton() {}
     
     var dailyCardPublisher: AnyPublisher<DailyCard?, Never> {
-        Just(DailyCard(name: "", description: "", meaningReverse: "", meaningUp: "Loren ipsum blablabla seilaoquer", shortName: "ar00", number: 0, type: .major, suit: nil)).eraseToAnyPublisher()
+        Just(DailyCard(name: "", description: "", meaningReverse: "", meaningUp: "", shortName: "ar00", number: 0, type: .major, suit: nil)).eraseToAnyPublisher()
     }
     
     func notifyAppearance() {}

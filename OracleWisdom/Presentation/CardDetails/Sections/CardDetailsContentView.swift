@@ -29,12 +29,11 @@ struct CardDetailsContentView: View {
 private extension CardDetailsContentView {
     @ViewBuilder var mainContent: some View {
         simpleDivisor
-        Text("Card Details")
+        Text(card?.name ?? "")
             .font(.playfairDisplay(size: 35).italic())
             .foregroundStyle(Color.golden)
         if let card {
             VStack(alignment: .leading, spacing: 16) {
-                name(card.name)
                 description(card.description)
                 meaningUp(card.meaningUp)
                 meaningReverse(card.meaningReverse)
@@ -45,17 +44,8 @@ private extension CardDetailsContentView {
     }
     
     @ViewBuilder 
-    func name(_ cardName: String) -> some View {
-        VStack(alignment: .leading) {
-            category(text: "Name")
-            text(text: cardName)
-        }
-    }
-    
-    @ViewBuilder 
     func description(_ description: String) -> some View {
         VStack(alignment: .leading) {
-            category(text: "Description")
             text(text: description)
         }
     }

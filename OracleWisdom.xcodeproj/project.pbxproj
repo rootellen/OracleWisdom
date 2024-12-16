@@ -43,7 +43,6 @@
 		D8BD8B072C651EBE005D42C3 /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B062C651EBE005D42C3 /* HomeContentView.swift */; };
 		D8BD8B0C2C651FB6005D42C3 /* BackgroundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B0B2C651FB6005D42C3 /* BackgroundViews.swift */; };
 		D8BD8B0F2C652DB2005D42C3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B0E2C652DB2005D42C3 /* HomeViewModel.swift */; };
-		D8BD8B162C65382F005D42C3 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B152C65382F005D42C3 /* MainRouter.swift */; };
 		D8BD8B212C65611E005D42C3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B202C65611E005D42C3 /* Router.swift */; };
 		D8BD8B242C6687CD005D42C3 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B232C6687CD005D42C3 /* HomeBuilder.swift */; };
 		D8BD8B272C6687E6005D42C3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD8B262C6687E6005D42C3 /* HomeScreen.swift */; };
@@ -110,7 +109,6 @@
 		D8BD8B062C651EBE005D42C3 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
 		D8BD8B0B2C651FB6005D42C3 /* BackgroundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViews.swift; sourceTree = "<group>"; };
 		D8BD8B0E2C652DB2005D42C3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		D8BD8B152C65382F005D42C3 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D8BD8B202C65611E005D42C3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D8BD8B232C6687CD005D42C3 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		D8BD8B262C6687E6005D42C3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -210,10 +208,9 @@
 			isa = PBXGroup;
 			children = (
 				D840A4DB2C6414090095951B /* DTO */,
-				D840A4B72C62FB590095951B /* RemoteDataSource */,
+				D840A4B72C62FB590095951B /* DataSource */,
 				D840A4A52C62E60E0095951B /* Repository */,
 				D840A4A42C62E5EB0095951B /* API */,
-				D840A4A32C62E5E30095951B /* PersistentStorage */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -226,13 +223,6 @@
 				D840A4AF2C62EC450095951B /* Interfaces */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		D840A4A32C62E5E30095951B /* PersistentStorage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PersistentStorage;
 			sourceTree = "<group>";
 		};
 		D840A4A42C62E5EB0095951B /* API */ = {
@@ -254,7 +244,6 @@
 		D840A4A82C62E7C60095951B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D8BD8B142C653824005D42C3 /* Routing */,
 				D840A4B32C62F0C00095951B /* Networking */,
 			);
 			path = Core;
@@ -286,12 +275,12 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		D840A4B72C62FB590095951B /* RemoteDataSource */ = {
+		D840A4B72C62FB590095951B /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
 				D840A4D32C63F3660095951B /* DailyCardRemoteDataSource.swift */,
 			);
-			path = RemoteDataSource;
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		D840A4BA2C62FDBB0095951B /* UseCases */ = {
@@ -423,14 +412,6 @@
 				D840A4792C62E4E50095951B /* Assets.xcassets */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		D8BD8B142C653824005D42C3 /* Routing */ = {
-			isa = PBXGroup;
-			children = (
-				D8BD8B152C65382F005D42C3 /* MainRouter.swift */,
-			);
-			path = Routing;
 			sourceTree = "<group>";
 		};
 		D8BD8B222C6687BD005D42C3 /* Home */ = {
@@ -656,7 +637,6 @@
 				D840A4DD2C64141F0095951B /* DailyCardDTO.swift in Sources */,
 				D8DD44BB2C644F17001D1CBD /* DailyCardScreen.swift in Sources */,
 				D840A4762C62E4E30095951B /* OracleWisdomApp.swift in Sources */,
-				D8BD8B162C65382F005D42C3 /* MainRouter.swift in Sources */,
 				D840A4B92C62FC1E0095951B /* RequestBuilder.swift in Sources */,
 				D8BD8B0F2C652DB2005D42C3 /* HomeViewModel.swift in Sources */,
 				D8BB44422C6BE5D7006D57BE /* CardDetailsBuilder.swift in Sources */,
