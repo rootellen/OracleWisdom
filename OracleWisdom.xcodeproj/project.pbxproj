@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D82A66682D3EF73D0042FAEA /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = D82A66672D3EF73D0042FAEA /* GoogleGenerativeAI */; };
+		D82A666A2D3F03240042FAEA /* GeminiOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82A66692D3F031E0042FAEA /* GeminiOverlayView.swift */; };
 		D840A4762C62E4E30095951B /* OracleWisdomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4752C62E4E30095951B /* OracleWisdomApp.swift */; };
 		D840A4782C62E4E30095951B /* DailyCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4772C62E4E30095951B /* DailyCardContentView.swift */; };
 		D840A47A2C62E4E50095951B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D840A4792C62E4E50095951B /* Assets.xcassets */; };
@@ -15,8 +17,8 @@
 		D840A4912C62E4E50095951B /* OracleWisdomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4902C62E4E50095951B /* OracleWisdomUITests.swift */; };
 		D840A4932C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4922C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift */; };
 		D840A4A72C62E7540095951B /* DailyCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4A62C62E7540095951B /* DailyCardRequest.swift */; };
-		D840A4AC2C62EBD20095951B /* DailyCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4AB2C62EBD20095951B /* DailyCardRepository.swift */; };
-		D840A4AE2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4AD2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift */; };
+		D840A4AC2C62EBD20095951B /* OracleWisdomRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4AB2C62EBD20095951B /* OracleWisdomRepository.swift */; };
+		D840A4AE2C62EBFA0095951B /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4AD2C62EBFA0095951B /* RepositoryProtocol.swift */; };
 		D840A4B22C62EE8D0095951B /* DailyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4B12C62EE8D0095951B /* DailyCard.swift */; };
 		D840A4B92C62FC1E0095951B /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4B82C62FC1E0095951B /* RequestBuilder.swift */; };
 		D840A4BC2C62FDD90095951B /* DailyCardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4BB2C62FDD90095951B /* DailyCardUseCase.swift */; };
@@ -27,9 +29,19 @@
 		D840A4CB2C63F13A0095951B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4CA2C63F13A0095951B /* NetworkClient.swift */; };
 		D840A4CD2C63F1560095951B /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4CC2C63F1560095951B /* NetworkClientProtocol.swift */; };
 		D840A4D22C63F27E0095951B /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4D12C63F27E0095951B /* BaseRequest.swift */; };
-		D840A4D42C63F3660095951B /* DailyCardRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4D32C63F3660095951B /* DailyCardRemoteDataSource.swift */; };
+		D840A4D42C63F3660095951B /* OracleWisdomRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4D32C63F3660095951B /* OracleWisdomRemoteDataSource.swift */; };
 		D840A4DD2C64141F0095951B /* DailyCardDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4DC2C64141F0095951B /* DailyCardDTO.swift */; };
 		D840A4E22C6436AA0095951B /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840A4E12C6436AA0095951B /* DataError.swift */; };
+		D8B123832D3EDED60058E6E9 /* GenAI-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8B123822D3EDED60058E6E9 /* GenAI-info.plist */; };
+		D8B123862D3EDF2E0058E6E9 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B123852D3EDF290058E6E9 /* ApiKey.swift */; };
+		D8B1238A2D3EE30F0058E6E9 /* GeminiBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B123892D3EE30B0058E6E9 /* GeminiBuilder.swift */; };
+		D8B1238C2D3EE3290058E6E9 /* GeminiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1238B2D3EE3250058E6E9 /* GeminiViewModel.swift */; };
+		D8B1238E2D3EE3BD0058E6E9 /* GeminiScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1238D2D3EE3B70058E6E9 /* GeminiScreen.swift */; };
+		D8B123912D3EE4480058E6E9 /* GeminiContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B123902D3EE4440058E6E9 /* GeminiContentView.swift */; };
+		D8B123932D3EE8570058E6E9 /* SaveGeminiPromtUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B123922D3EE8440058E6E9 /* SaveGeminiPromtUseCase.swift */; };
+		D8B123952D3EE9550058E6E9 /* OracleWisdomLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B123942D3EE9510058E6E9 /* OracleWisdomLocalDataSource.swift */; };
+		D8B123972D3EED110058E6E9 /* GeminiTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B123962D3EED0E0058E6E9 /* GeminiTopView.swift */; };
+		D8B1239B2D3EF4880058E6E9 /* GetGeminiResponseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1239A2D3EF47E0058E6E9 /* GetGeminiResponseUseCase.swift */; };
 		D8BB44422C6BE5D7006D57BE /* CardDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB44412C6BE5D7006D57BE /* CardDetailsBuilder.swift */; };
 		D8BB44442C6BE5E2006D57BE /* CardDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB44432C6BE5E2006D57BE /* CardDetailsScreen.swift */; };
 		D8BB44462C6BE5F1006D57BE /* CardDetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BB44452C6BE5F1006D57BE /* CardDetailsContentView.swift */; };
@@ -69,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D82A66692D3F031E0042FAEA /* GeminiOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiOverlayView.swift; sourceTree = "<group>"; };
 		D840A4722C62E4E30095951B /* OracleWisdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OracleWisdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D840A4752C62E4E30095951B /* OracleWisdomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomApp.swift; sourceTree = "<group>"; };
 		D840A4772C62E4E30095951B /* DailyCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardContentView.swift; sourceTree = "<group>"; };
@@ -80,8 +93,8 @@
 		D840A4902C62E4E50095951B /* OracleWisdomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomUITests.swift; sourceTree = "<group>"; };
 		D840A4922C62E4E50095951B /* OracleWisdomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D840A4A62C62E7540095951B /* DailyCardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardRequest.swift; sourceTree = "<group>"; };
-		D840A4AB2C62EBD20095951B /* DailyCardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardRepository.swift; sourceTree = "<group>"; };
-		D840A4AD2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D840A4AB2C62EBD20095951B /* OracleWisdomRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomRepository.swift; sourceTree = "<group>"; };
+		D840A4AD2C62EBFA0095951B /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
 		D840A4B12C62EE8D0095951B /* DailyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCard.swift; sourceTree = "<group>"; };
 		D840A4B82C62FC1E0095951B /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		D840A4BB2C62FDD90095951B /* DailyCardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardUseCase.swift; sourceTree = "<group>"; };
@@ -93,9 +106,19 @@
 		D840A4CA2C63F13A0095951B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		D840A4CC2C63F1560095951B /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
 		D840A4D12C63F27E0095951B /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
-		D840A4D32C63F3660095951B /* DailyCardRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardRemoteDataSource.swift; sourceTree = "<group>"; };
+		D840A4D32C63F3660095951B /* OracleWisdomRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomRemoteDataSource.swift; sourceTree = "<group>"; };
 		D840A4DC2C64141F0095951B /* DailyCardDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardDTO.swift; sourceTree = "<group>"; };
 		D840A4E12C6436AA0095951B /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		D8B123822D3EDED60058E6E9 /* GenAI-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenAI-info.plist"; sourceTree = "<group>"; };
+		D8B123852D3EDF290058E6E9 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		D8B123892D3EE30B0058E6E9 /* GeminiBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiBuilder.swift; sourceTree = "<group>"; };
+		D8B1238B2D3EE3250058E6E9 /* GeminiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiViewModel.swift; sourceTree = "<group>"; };
+		D8B1238D2D3EE3B70058E6E9 /* GeminiScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiScreen.swift; sourceTree = "<group>"; };
+		D8B123902D3EE4440058E6E9 /* GeminiContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiContentView.swift; sourceTree = "<group>"; };
+		D8B123922D3EE8440058E6E9 /* SaveGeminiPromtUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGeminiPromtUseCase.swift; sourceTree = "<group>"; };
+		D8B123942D3EE9510058E6E9 /* OracleWisdomLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleWisdomLocalDataSource.swift; sourceTree = "<group>"; };
+		D8B123962D3EED0E0058E6E9 /* GeminiTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiTopView.swift; sourceTree = "<group>"; };
+		D8B1239A2D3EF47E0058E6E9 /* GetGeminiResponseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGeminiResponseUseCase.swift; sourceTree = "<group>"; };
 		D8BB44412C6BE5D7006D57BE /* CardDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsBuilder.swift; sourceTree = "<group>"; };
 		D8BB44432C6BE5E2006D57BE /* CardDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsScreen.swift; sourceTree = "<group>"; };
 		D8BB44452C6BE5F1006D57BE /* CardDetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82A66682D3EF73D0042FAEA /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,12 +166,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D82A66662D3EF73D0042FAEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D840A4692C62E4E30095951B = {
 			isa = PBXGroup;
 			children = (
 				D840A4742C62E4E30095951B /* OracleWisdom */,
 				D840A4852C62E4E50095951B /* OracleWisdomTests */,
 				D840A48F2C62E4E50095951B /* OracleWisdomUITests */,
+				D82A66662D3EF73D0042FAEA /* Frameworks */,
 				D840A4732C62E4E30095951B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -175,6 +207,7 @@
 				D8DD44C12C645DBA001D1CBD /* Support */,
 				D840A47B2C62E4E50095951B /* Preview Content */,
 				D8BD8B132C6537D6005D42C3 /* Resource */,
+				D8B123822D3EDED60058E6E9 /* GenAI-info.plist */,
 			);
 			path = OracleWisdom;
 			sourceTree = "<group>";
@@ -236,7 +269,7 @@
 		D840A4A52C62E60E0095951B /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				D840A4AB2C62EBD20095951B /* DailyCardRepository.swift */,
+				D840A4AB2C62EBD20095951B /* OracleWisdomRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -244,6 +277,7 @@
 		D840A4A82C62E7C60095951B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D8B123842D3EDF1F0058E6E9 /* GenAI */,
 				D840A4B32C62F0C00095951B /* Networking */,
 			);
 			path = Core;
@@ -252,7 +286,7 @@
 		D840A4AF2C62EC450095951B /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				D840A4AD2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift */,
+				D840A4AD2C62EBFA0095951B /* RepositoryProtocol.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -278,7 +312,8 @@
 		D840A4B72C62FB590095951B /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				D840A4D32C63F3660095951B /* DailyCardRemoteDataSource.swift */,
+				D8B123942D3EE9510058E6E9 /* OracleWisdomLocalDataSource.swift */,
+				D840A4D32C63F3660095951B /* OracleWisdomRemoteDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -286,6 +321,8 @@
 		D840A4BA2C62FDBB0095951B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				D8B1239A2D3EF47E0058E6E9 /* GetGeminiResponseUseCase.swift */,
+				D8B123922D3EE8440058E6E9 /* SaveGeminiPromtUseCase.swift */,
 				D840A4BB2C62FDD90095951B /* DailyCardUseCase.swift */,
 			);
 			path = UseCases;
@@ -344,6 +381,35 @@
 			path = DTO;
 			sourceTree = "<group>";
 		};
+		D8B123842D3EDF1F0058E6E9 /* GenAI */ = {
+			isa = PBXGroup;
+			children = (
+				D8B123852D3EDF290058E6E9 /* ApiKey.swift */,
+			);
+			path = GenAI;
+			sourceTree = "<group>";
+		};
+		D8B123882D3EE3020058E6E9 /* Gemini */ = {
+			isa = PBXGroup;
+			children = (
+				D8B1238F2D3EE4340058E6E9 /* Sections */,
+				D8B1238D2D3EE3B70058E6E9 /* GeminiScreen.swift */,
+				D8B1238B2D3EE3250058E6E9 /* GeminiViewModel.swift */,
+				D8B123892D3EE30B0058E6E9 /* GeminiBuilder.swift */,
+			);
+			path = Gemini;
+			sourceTree = "<group>";
+		};
+		D8B1238F2D3EE4340058E6E9 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				D82A66692D3F031E0042FAEA /* GeminiOverlayView.swift */,
+				D8B123962D3EED0E0058E6E9 /* GeminiTopView.swift */,
+				D8B123902D3EE4440058E6E9 /* GeminiContentView.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
 		D8BB443F2C6BE5C5006D57BE /* CardDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +457,7 @@
 		D8BD8B052C651EA9005D42C3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D8B123882D3EE3020058E6E9 /* Gemini */,
 				D8BD8B222C6687BD005D42C3 /* Home */,
 				D8BD8B292C6689C5005D42C3 /* DailyCard */,
 				D8BB443F2C6BE5C5006D57BE /* CardDetails */,
@@ -491,6 +558,7 @@
 			);
 			name = OracleWisdom;
 			packageProductDependencies = (
+				D82A66672D3EF73D0042FAEA /* GoogleGenerativeAI */,
 			);
 			productName = OracleWisdom;
 			productReference = D840A4722C62E4E30095951B /* OracleWisdom.app */;
@@ -565,6 +633,7 @@
 			);
 			mainGroup = D840A4692C62E4E30095951B;
 			packageReferences = (
+				D8B123872D3EE0F80058E6E9 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
 			);
 			productRefGroup = D840A4732C62E4E30095951B /* Products */;
 			projectDirPath = "";
@@ -585,6 +654,7 @@
 				D8BD8AFD2C646ABE005D42C3 /* PlayfairDisplay-Italic-VariableFont_wght.ttf in Resources */,
 				D840A47D2C62E4E50095951B /* Preview Assets.xcassets in Resources */,
 				D8BD8AFE2C646AC1005D42C3 /* PlayfairDisplay-VariableFont_wght.ttf in Resources */,
+				D8B123832D3EDED60058E6E9 /* GenAI-info.plist in Resources */,
 				D840A47A2C62E4E50095951B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +685,7 @@
 				D8BD8B072C651EBE005D42C3 /* HomeContentView.swift in Sources */,
 				D840A4D22C63F27E0095951B /* BaseRequest.swift in Sources */,
 				D840A4782C62E4E30095951B /* DailyCardContentView.swift in Sources */,
+				D8B1238C2D3EE3290058E6E9 /* GeminiViewModel.swift in Sources */,
 				D8BD8AFC2C646918005D42C3 /* Font+Extension.swift in Sources */,
 				D8BD8B212C65611E005D42C3 /* Router.swift in Sources */,
 				D840A4A72C62E7540095951B /* DailyCardRequest.swift in Sources */,
@@ -622,10 +693,16 @@
 				D8BB444B2C6BEA3C006D57BE /* CardMock.swift in Sources */,
 				D840A4C82C63F0B00095951B /* APILogger.swift in Sources */,
 				D840A4E22C6436AA0095951B /* DataError.swift in Sources */,
-				D840A4AE2C62EBFA0095951B /* DailyCardRepositoryProtocol.swift in Sources */,
+				D840A4AE2C62EBFA0095951B /* RepositoryProtocol.swift in Sources */,
+				D8B1238A2D3EE30F0058E6E9 /* GeminiBuilder.swift in Sources */,
 				D8BD8B032C651916005D42C3 /* ButtonStyle.swift in Sources */,
 				D8BD8B242C6687CD005D42C3 /* HomeBuilder.swift in Sources */,
-				D840A4AC2C62EBD20095951B /* DailyCardRepository.swift in Sources */,
+				D8B123912D3EE4480058E6E9 /* GeminiContentView.swift in Sources */,
+				D840A4AC2C62EBD20095951B /* OracleWisdomRepository.swift in Sources */,
+				D8B1239B2D3EF4880058E6E9 /* GetGeminiResponseUseCase.swift in Sources */,
+				D8B123972D3EED110058E6E9 /* GeminiTopView.swift in Sources */,
+				D82A666A2D3F03240042FAEA /* GeminiOverlayView.swift in Sources */,
+				D8B123952D3EE9550058E6E9 /* OracleWisdomLocalDataSource.swift in Sources */,
 				D8BB44462C6BE5F1006D57BE /* CardDetailsContentView.swift in Sources */,
 				D840A4BC2C62FDD90095951B /* DailyCardUseCase.swift in Sources */,
 				D8DD44BF2C6453E6001D1CBD /* DailyCardTopView.swift in Sources */,
@@ -636,14 +713,17 @@
 				D840A4CB2C63F13A0095951B /* NetworkClient.swift in Sources */,
 				D840A4DD2C64141F0095951B /* DailyCardDTO.swift in Sources */,
 				D8DD44BB2C644F17001D1CBD /* DailyCardScreen.swift in Sources */,
+				D8B1238E2D3EE3BD0058E6E9 /* GeminiScreen.swift in Sources */,
 				D840A4762C62E4E30095951B /* OracleWisdomApp.swift in Sources */,
 				D840A4B92C62FC1E0095951B /* RequestBuilder.swift in Sources */,
+				D8B123932D3EE8570058E6E9 /* SaveGeminiPromtUseCase.swift in Sources */,
 				D8BD8B0F2C652DB2005D42C3 /* HomeViewModel.swift in Sources */,
 				D8BB44422C6BE5D7006D57BE /* CardDetailsBuilder.swift in Sources */,
 				D8BD8B272C6687E6005D42C3 /* HomeScreen.swift in Sources */,
 				D8DD44BD2C644FC6001D1CBD /* DailyCardBuilder.swift in Sources */,
 				D840A4CD2C63F1560095951B /* NetworkClientProtocol.swift in Sources */,
-				D840A4D42C63F3660095951B /* DailyCardRemoteDataSource.swift in Sources */,
+				D840A4D42C63F3660095951B /* OracleWisdomRemoteDataSource.swift in Sources */,
+				D8B123862D3EDF2E0058E6E9 /* ApiKey.swift in Sources */,
 				D8BD8B002C646C20005D42C3 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -978,6 +1058,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8B123872D3EE0F80058E6E9 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D82A66672D3EF73D0042FAEA /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8B123872D3EE0F80058E6E9 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D840A46A2C62E4E30095951B /* Project object */;
 }

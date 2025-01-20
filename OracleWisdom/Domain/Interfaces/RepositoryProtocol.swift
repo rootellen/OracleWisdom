@@ -8,6 +8,9 @@
 import Foundation
 import Combine
 
-protocol DailyCardRepositoryProtocol {
+protocol OracleWisdomRepositoryProtocol {
     func getDailyCard() -> AnyPublisher<DailyCard, Error>
+    func saveGeminiPrompt(_ prompt: String) async
+    func getGeminiPrompt() async -> String?
+    func getGeminiResponse() async -> String?
 }

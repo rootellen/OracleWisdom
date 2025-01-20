@@ -25,7 +25,8 @@ struct OracleWisdomApp: App {
                         HomeBuilder().build()
                     case .dailyCard:
                         DailyCardBuilder().build()
-                        
+                    case .gemini:
+                        GeminiBuilder().build()
                     }
                 }
             }

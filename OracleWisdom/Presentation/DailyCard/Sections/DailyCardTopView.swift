@@ -58,6 +58,8 @@ extension DailyCardTopView {
 }
 
 class DailyCardTopPreviewViewModel: DailyCardViewModelProtocol {
+    func didTapGetAIInterpretation() {}
+    
     func didTapAboutThisCardButton() {}
     
     var dailyCardPublisher: AnyPublisher<DailyCard?, Never> {

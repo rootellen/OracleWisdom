@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct HomeContentView: View {
-    
-    @ObservedObject var router = Router.shared
     let viewModel: HomeViewModelProtocol
     
     init(viewModel: HomeViewModelProtocol = DIContainer.shared.inject(type: HomeViewModelProtocol.self)!) {
@@ -37,7 +35,7 @@ extension HomeContentView {
             card
                 .frame(height: 310)
                 .onTapGesture {
-                    router.navigateTo(Routes.dailyCard)
+                    viewModel.goToDailyCard()
                 }
         }
     }

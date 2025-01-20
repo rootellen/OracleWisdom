@@ -8,9 +8,7 @@
 import SwiftUI
 import Combine
 
-struct DailyCardContentView: View {
-    @ObservedObject var router = Router.shared
-    
+struct DailyCardContentView: View {    
     var viewModel: DailyCardViewModelProtocol
     @State var dailyCard: DailyCard? = nil
     @State private var isSheetPresented = false
@@ -27,6 +25,7 @@ struct DailyCardContentView: View {
             })
     }
 }
+
 extension DailyCardContentView {
     @ViewBuilder var mainContent: some View {
         if let dailyCard {
@@ -38,6 +37,7 @@ extension DailyCardContentView {
                 }
                 bottomHanger
                 aboutThisCardButton
+                getAIInterpretationButton
             }
         }
     }
@@ -72,8 +72,32 @@ extension DailyCardContentView {
                     .build()
                     .presentationDetents([.fraction(0.8)])
             })
-            
-
+        }
+    }
+    
+    @ViewBuilder var getAIInterpretationButton: some View {
+        HStack {
+            Button {
+                viewModel.didTapGetAIInterpretation()
+            } label: {
+                HStack {
+                    Spacer()
+                    Text("Get Gemini Interpretation")
+                        .font(.playfairDisplay(size: 20))
+                        .foregroundStyle(Color.darkMid)
+                    Spacer()
+                }
+            }
+            .buttonStyle(LargeRoundedButtonStyle(backgroundColor: Color.goldenLinearGradient, cornerRadius: 20))
+            .padding()
+            .sheet(isPresented: $isSheetPresented, onDismiss: {
+                isSheetPresented = false
+            }, content: {
+                CardDetailsBuilder()
+                    .setCard(card: dailyCard ?? nil)
+                    .build()
+                    .presentationDetents([.fraction(0.8)])
+            })
         }
     }
     
@@ -113,6 +137,8 @@ extension DailyCardContentView {
 }
 
 class DailyCardViewPreviewViewModel: DailyCardViewModelProtocol {
+    func didTapGetAIInterpretation() {}
+    
     func didTapAboutThisCardButton() {}
     
     var dailyCardPublisher: AnyPublisher<DailyCard?, Never> {

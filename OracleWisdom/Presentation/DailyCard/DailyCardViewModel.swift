@@ -7,20 +7,26 @@
 
 import Foundation
 import Combine
+import SwiftUICore
 
 protocol DailyCardViewModelProtocol {
     var dailyCardPublisher: AnyPublisher<DailyCard?, Never> { get }
     func notifyAppearance()
     func didTapAboutThisCardButton()
+    func didTapGetAIInterpretation()
 }
 
-class DailyCardViewModel: DailyCardViewModelProtocol, ObservableObject {
-    
-    var useCase: DailyCardUseCaseProtocol
+class DailyCardViewModel: DailyCardViewModelProtocol {
+    @ObservedObject var router = Router.shared
+
+    var dailyCardUseCase: DailyCardUseCaseProtocol
+    var saveGeminiPromptUseCase: SaveGeminiPromtUseCaseProtocol
     var cancellable: AnyCancellable?
     
-    init(useCase: DailyCardUseCaseProtocol = DIContainer.shared.inject(type: DailyCardUseCaseProtocol.self)!) {
-        self.useCase = useCase
+    init(dailyCardUseCase: DailyCardUseCaseProtocol = DIContainer.shared.inject(type: DailyCardUseCaseProtocol.self)!,
+         saveGeminiPromptUseCase: SaveGeminiPromtUseCaseProtocol = DIContainer.shared.inject(type: SaveGeminiPromtUseCaseProtocol.self)!) {
+        self.dailyCardUseCase = dailyCardUseCase
+        self.saveGeminiPromptUseCase = saveGeminiPromptUseCase
     }
     
     // Published
@@ -38,10 +44,22 @@ class DailyCardViewModel: DailyCardViewModelProtocol, ObservableObject {
     func didTapAboutThisCardButton() {
         print(dailyCardPublished as Any)
     }
+    
+    func didTapGetAIInterpretation() {
+        if let dailyCardPublished {
+            let prompt = "Interpretate the meaning of the tarot card \(dailyCardPublished.name) \(dailyCardPublished.isReversed ? "in reverse" : "") for my daily card reading and give me some advice"
+            let params = SaveGeminiPromtParameters(prompt: prompt)
+            Task {
+                await saveGeminiPromptUseCase.run(params: params)
+            }
+            router.navigateTo(Routes.gemini)
+        }
+    }
 
     // MARK: - Private func
     private func runDailyCardUseCase() {
-        cancellable = useCase.run().sink(receiveCompletion: { completion in
+        cancellable = dailyCardUseCase.run()
+            .sink(receiveCompletion: { completion in
             switch completion {
             case .failure(_):
                 print("Erro")

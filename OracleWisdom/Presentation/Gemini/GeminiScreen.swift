@@ -1,20 +1,25 @@
 //
-//  HomeScreen.swift
+//  GeminiScreen.swift
 //  OracleWisdom
 //
-//  Created by Ruth Ellen on 09/08/24.
+//  Created by Ruth Ellen on 20/01/25.
 //
 
 import SwiftUI
 
-struct HomeScreen<Top: View,
-                  Content: View,
-                  Overlay: View> : View {
+struct GeminiScreen<Top: View,
+                    Content: View,
+                    Overlay: View>: View {
+    private let viewModel: GeminiViewModelProtocol
     private let top: Top
     private let content: Content
     private let overlay: Overlay
     
-    init(top: Top, content: Content, overlay: Overlay) {
+    init(viewModel: GeminiViewModelProtocol = DIContainer.shared.inject(type: GeminiViewModelProtocol.self)!,
+         top: Top,
+         content: Content,
+         overlay: Overlay) {
+        self.viewModel = viewModel
         self.top = top
         self.content = content
         self.overlay = overlay
@@ -24,26 +29,27 @@ struct HomeScreen<Top: View,
         ZStack {
             background
             VStack {
+                top
                 ScrollView {
-                    top
                     content
                 }
             }
             overlay
         }
+        .onAppear {
+            viewModel.notifyAppearance()
+        }
         .toolbar(.hidden)
     }
 }
 
-private extension HomeScreen {
+extension GeminiScreen {
     @ViewBuilder var background: some View {
         LinearGradientBackground(colors: [Color.darkTop,
                                           Color.darkMid,
                                           Color.lightMid,
                                           Color.lightBottom])
+        .blendMode(.normal)
     }
-}
-
-#Preview {
-    HomeScreen(top: EmptyView(), content: HomeContentView(), overlay: EmptyView())
+    
 }

@@ -13,9 +13,9 @@ protocol DailyCardUseCaseProtocol {
 }
 
 final class DailyCardUseCase: DailyCardUseCaseProtocol {
-    private let repository: DailyCardRepositoryProtocol
+    private let repository: OracleWisdomRepositoryProtocol
     
-    init(repository: DailyCardRepositoryProtocol = DIContainer.shared.inject(type: DailyCardRepositoryProtocol.self)!) {
+    init(repository: OracleWisdomRepositoryProtocol = DIContainer.shared.inject(type: OracleWisdomRepositoryProtocol.self)!) {
         self.repository = repository
     }
     

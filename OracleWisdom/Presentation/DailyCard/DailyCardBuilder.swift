@@ -8,13 +8,6 @@
 import SwiftUI
 
 class DailyCardBuilder {
-    
-    let viewModel: DailyCardViewModelProtocol
-    
-    init(viewModel: DailyCardViewModelProtocol = DIContainer.shared.inject(type: DailyCardViewModelProtocol.self)!) {
-        self.viewModel = viewModel
-    }
-    
     func build() -> some View {
         return DailyCardScreen(top: getTopView(),
                                content: getContentView(),

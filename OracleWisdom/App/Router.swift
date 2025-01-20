@@ -10,6 +10,7 @@ import SwiftUI
 enum Routes: Hashable {
     case home
     case dailyCard
+    case gemini
 }
 
 final class Router: ObservableObject {
